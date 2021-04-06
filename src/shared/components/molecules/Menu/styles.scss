@@ -1,0 +1,65 @@
+@use '../../../theme';
+
+.Menu {
+  position: relative;
+  display: inline-block;
+  max-width: 200px;
+
+  &_capitalize {
+    text-transform: capitalize;
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+
+  &__Button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    padding-bottom: 10px;
+    font-family: 'Avenir', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: theme.$font-color-light;
+    text-transform: inherit;
+    cursor: pointer;
+
+    &_icon:after {
+      padding-left: 4px;
+      content: ' ▾';
+    }
+  }
+
+  &__Items {
+    position: absolute;
+    left: 50%;
+    display: none;
+    width: inherit;
+    height: auto;
+    margin-top: 0px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.35);
+    transform: translateX(-50%);
+
+    &_visible {
+      display: block;
+    }
+  }
+
+  &__Item {
+    padding: 10px;
+    font-family: 'Avenir', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: theme.$font-color-dark;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+}

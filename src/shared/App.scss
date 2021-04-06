@@ -1,0 +1,11 @@
+@use './theme';
+
+@import './reset';
+
+#app {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  font-family: 'Avenir', sans-serif;
+  background-color: white;
+}

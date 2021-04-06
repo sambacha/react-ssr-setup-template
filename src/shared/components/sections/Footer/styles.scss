@@ -1,0 +1,18 @@
+@use '../../../theme';
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: theme.$footer-height;
+  background: theme.$background-color;
+
+  &__Text {
+    color: theme.$font-color-light;
+  }
+
+  &__Author {
+    color: theme.$primary-color;
+  }
+}

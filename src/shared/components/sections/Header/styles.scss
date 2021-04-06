@@ -1,0 +1,35 @@
+@use '../../../theme';
+
+.Header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: theme.$header-height;
+  padding: 0px 30px;
+  background: theme.$background-color;
+
+  &__Logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  &__Navigation,
+  &__Navigation > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__Link {
+    padding: 10px;
+    color: theme.$font-color-light;
+    cursor: pointer;
+
+    &_active {
+      color: theme.$primary-color;
+    }
+  }
+}
